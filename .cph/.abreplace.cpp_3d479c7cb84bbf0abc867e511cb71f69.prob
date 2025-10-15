@@ -1,0 +1,1 @@
+{"name":"Local: abreplace","url":"/Users/imran/Desktop/C - Problem/abreplace.cpp","tests":[{"id":1739360835242,"input":"4\nb\naabbbabaa\nabbb\nabbaab\n","output":"b\naabbbabaa\nbbbb\nabbaaa"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/imran/Desktop/C - Problem/abreplace.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: letter_rearranging","url":"/Users/imran/Desktop/C - Problem/letter_rearranging.cpp","tests":[{"id":1740736320327,"input":"3\naa\nabacaba\nxdd\n","output":"-1\nbaacaba\nxdd"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/imran/Desktop/C - Problem/letter_rearranging.cpp","group":"local","local":true}

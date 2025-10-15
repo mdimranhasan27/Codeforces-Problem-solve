@@ -1,0 +1,1 @@
+{"name":"Local: s_and_k","url":"/Users/imran/Desktop/C - Problem/s_and_k.cpp","tests":[{"id":1739382419679,"input":"4\n1\n6\n3\n98\n","output":"Kosuke\nSakurako\nKosuke\nSakurako\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/imran/Desktop/C - Problem/s_and_k.cpp","group":"local","local":true}
