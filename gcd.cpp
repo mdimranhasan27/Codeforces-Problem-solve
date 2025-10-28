@@ -4,6 +4,13 @@
 using namespace std;
 
 typedef long long ll;
+void GCD(ll x,ll y){
+   while(__gcd(x,y)!=1){
+        y++;
+   }
+
+   cout<<y<<"\n";
+}
 
 int main()
 {
@@ -13,10 +20,14 @@ int main()
     int t;
     cin>>t;
     while(t--){
-    int a,b,c,d;
-    cin>>a>>b>>c>>d;
-    if(a==b && b==c && c==d) cout<<"YES\n";
-    else cout<<"NO\n";
+    ll n;
+    cin >> n;
+    vector<ll>v(n);
+    for(ll i=0;i<n;i++){
+        cin>>v[i];
+    }
+    GCD(v[0],2);
+    
     }
     return 0;
 }

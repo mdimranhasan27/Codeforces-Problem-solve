@@ -1,3 +1,4 @@
+
 //~imran~
 
 #include <bits/stdc++.h>
@@ -13,10 +14,11 @@ int main()
     int t;
     cin>>t;
     while(t--){
-    int a,b,c,d;
-    cin>>a>>b>>c>>d;
-    if(a==b && b==c && c==d) cout<<"YES\n";
-    else cout<<"NO\n";
+        ll s;
+        cin >> s;
+
+      ll ans=(-1+sqrt(1+8*s))/2;
+      cout << ans << "\n";
     }
     return 0;
 }

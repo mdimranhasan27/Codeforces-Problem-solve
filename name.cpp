@@ -13,10 +13,14 @@ int main()
     int t;
     cin>>t;
     while(t--){
-    int a,b,c,d;
-    cin>>a>>b>>c>>d;
-    if(a==b && b==c && c==d) cout<<"YES\n";
-    else cout<<"NO\n";
+    int n;
+    cin>>n;
+    string s,t;
+    cin>>s>>t;
+    sort(s.begin(),s.end());
+    sort(t.begin(),t.end());
+    if(s==t) cout <<"YES\n";
+    else cout <<"NO\n";
     }
     return 0;
 }
