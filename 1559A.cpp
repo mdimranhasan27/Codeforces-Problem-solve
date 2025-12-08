@@ -11,24 +11,23 @@ int main()
     cin.tie(NULL);
 
     int t;
-    cin>>t;
-    while(t--){
-    int n;
-    cin>>n;
-    vector<int>v(n);
-    vector<int>p(n);
-    for(int i=0;i<n;i++){
-         cin>>v[i];
-         p[i]=v[i];
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        vector<int> v(n);
+        for (int i = 0; i < n; i++)
+        {
+            cin >> v[i];
+        }
+        int x = v[0];
+        for (int i = 1; i < n; i++)
+        {
+            x &= v[i];
+        }
+        cout << x << "\n";
     }
-    sort(p.rbegin(),p.rend());
-    for(int i=0;i<n;i++){
-        v[i]=v[i]&p[i];
-   }
-   sort(v.begin(),v.end());
-   cout<<v[0]<<"\n";
-}
 
-    
     return 0;
 }
