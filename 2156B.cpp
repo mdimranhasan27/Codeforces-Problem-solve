@@ -21,7 +21,14 @@ int main()
     for(int i=0;i<q;i++){
         cin>>v[i];
     }
-    for(int i=0;i<q;i++){
+    bool allA=true;
+    for(int i=0;i<n;i++){
+        if(str[i]=='B'){
+            allA=false;
+            break;
+        }
+    }
+    for(int i=0;i<q && !allA ;i++){
         int a=v[i];
         int cnt=0,k=0;
         while(a!=0){
@@ -32,6 +39,9 @@ int main()
             if(k==n) k=0;
         }
         cout<<cnt<<"\n";
+    }
+    if(allA) for(int i=0;i<q;i++){
+        cout<<v[i]<<"\n";
     }
     
     }
