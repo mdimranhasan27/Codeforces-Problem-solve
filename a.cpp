@@ -1,24 +1,32 @@
 //~imran~
-
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+typedef long long ll;
+
+int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int t,i;
-    cin>>t;
-    for(i=1;i<=t;i++){
-    string s;
-    cin>>s;
-    if(s[7]=='l'||s[8]=='l'){
-    cout<<"Case "<<i<<": "<<"https://lightoj.com"<<"\n";
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+
+        int a, mx = 0, cnt = 0;
+
+        for (int i = 0; i < n; i++) {
+            cin >> a;
+
+            if (a < mx) 
+                cnt++;
+            else 
+                mx = a;
+        }
+
+        cout << cnt << "\n";
     }
-    else{
-    cout<<"Case "<<i<<": "<<"https://example.com"<<"\n";
-    }
-    }
+
     return 0;
 }
