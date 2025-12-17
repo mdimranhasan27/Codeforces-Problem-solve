@@ -16,15 +16,20 @@ int main()
     {
         ll a, b, c, d, x, y;
         cin >> a >> b >> c >> d;
-        if ((d - b) < (c - a))
-            cout << "-1\n";
-        else
+        if (d < b)
         {
-            y = d - b;   // y
-            x = (a + y); // x
-            x = x - c;
-            cout << x + y << "\n"; //
+            cout << "-1\n";
+            continue;
         }
+        y = d - b;
+        x = a + y;
+        if (x < c)
+        {
+            cout << "-1\n";
+            continue;
+        }
+        x = x - c;
+        cout << x + y << "\n";
     }
     return 0;
 }
