@@ -31,8 +31,9 @@ int main()
 
         }
         x = x - c;
-        
+
         cout << x + y << "\n";
     }
     return 0;
+    
 }
