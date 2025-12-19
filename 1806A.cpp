@@ -28,9 +28,10 @@ int main()
         {
             cout << "-1\n";
             continue;
-            
+
         }
         x = x - c;
+        
         cout << x + y << "\n";
     }
     return 0;
