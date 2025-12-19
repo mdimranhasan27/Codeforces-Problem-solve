@@ -24,14 +24,23 @@ int main()
             else
                 cnt1++;
         }
-        if (cnt0 == cnt1)
-            cout << 0 << "\n";
-        else if (cnt0 == 0)
-            cout << cnt1 << "\n";
-        else if (cnt1 == 0)
-            cout << cnt0 << "\n";
-        else
-            cout << str.length() - max(cnt0, cnt1) << "\n";
+        ll length = 0;
+        for (int i = 0; i < str.length(); i++)
+        {
+            if (str[i] == '0' && cnt1 > 0)
+            {
+                cnt1--;
+                length++;
+            }
+            else if (str[i] == '1' && cnt0 > 0)
+            {
+                cnt0--;
+                length++;
+            }
+            else
+                break;
+        }
+        cout << str.length() - length << "\n";
     }
     return 0;
 }
