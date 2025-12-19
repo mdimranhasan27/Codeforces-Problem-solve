@@ -14,6 +14,7 @@ int main()
     cin >> t;
     while (t--)
     {
+        
         string str;
         cin >> str;
         ll cnt0 = 0, cnt1 = 0;
