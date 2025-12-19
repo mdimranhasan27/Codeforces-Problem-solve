@@ -23,11 +23,12 @@ int main()
         }
         y = d - b;
         x = a + y;
-        
+
         if (x < c)
         {
             cout << "-1\n";
             continue;
+            
         }
         x = x - c;
         cout << x + y << "\n";
